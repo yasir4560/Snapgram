@@ -1,11 +1,11 @@
-import { Models } from 'appwrite';
+// import { Models } from 'appwrite';
 import React from 'react'
 import Loader from './Loader';
 import GridPostList from './GridPostList';
 
 type SearchResultsProps = {
     isSearchFetching: boolean;
-    searchedPosts: Models.Document[];
+    searchedPosts: any;
 }
 const SeachResults = ({ isSearchFetching, searchedPosts }: SearchResultsProps) => {
     if(isSearchFetching) return <Loader />

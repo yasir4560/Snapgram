@@ -7,6 +7,9 @@ import { useGetPosts, useSearchPosts } from '@/lib/react-query/queriesAndMutatio
 import React, { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 
+
+
+
 const Explore = () => {
   const {ref, inView} = useInView();
   const {data: posts, fetchNextPage, hasNextPage } = useGetPosts();
